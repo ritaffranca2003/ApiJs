@@ -14,7 +14,7 @@ server.get("/hello", (req, res) => {
 });
 
 server.get("/hello/:nome", (req, res) => {
-    const nome = req.query.nome;
+    const nome = req.params.nome;
     
     return res.json({
         title: "Teste",
